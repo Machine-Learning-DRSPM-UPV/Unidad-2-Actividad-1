@@ -2,6 +2,8 @@
 
 ## Métricas de evaluación de modelos de clasificación
 
+Using the metrics studied previously evaluate and compare models' performance and implement following:
+
 1. Try to build a classifier for the MNIST data set that achieves over 97% accuracy on the test set. Hint: The KneighborsClassifier works quite well for the task, you just need to find good hyperparameter values (try a grid search on the weights and n_neighbors hyperparameters.)
 2. Write a function that can shift an MNIST image in any direction (left, right, up, or down) by one pixel. Then, for each image in the trainin set, create four shifted copies (one per direction) and add them to the training set. Finally, train your best model on this expanded training set and measure its accuracy on the test set. You should observe that your model performs even better now!. This technique of artificially growing the training set is called *data augmentation* or *training set expansion*.
 3. Tackle the **Titanic** dataset. A great place to start is on [Kaggle](https://www.kaggle.com/c/titanic).
